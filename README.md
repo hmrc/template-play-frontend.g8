@@ -12,14 +12,14 @@ How to create a new project based on the template?
 * Decide your project name (the hardest part :))
 * Run the command
 
-    `sbt new hmrc/template-play-frontend.g8 --serviceName="Trader Services Route One Frontend" --serviceUrlPrefix="send-documents-for-customs-check" --serviceTargetPort="9379" --authorisedIdentifierKey="EORINumber" --serviceTitle="Send Documents For Customs Check" --authorisedServiceName="HMRC-CUS-ORG" --servicePrefix="Trader Services" --package="uk.gov.hmrc.traderservices" -o trader-services-route-one-frontend`
+    `sbt new hmrc/template-play-frontend --serviceName="Trader Services Route One Frontend" --serviceUrlPrefix="send-documents-for-customs-check" --serviceTargetPort="9379" --authorisedIdentifierKey="EORINumber" --serviceTitle="Send Documents For Customs Check" --authorisedServiceName="HMRC-CUS-ORG" --servicePrefix="Trader Services" --package="uk.gov.hmrc.traderservices" -o trader-services-route-one-frontend`
 
 or    
 
 * Install g8 commandline tool (http://www.foundweekends.org/giter8/setup.html)
 * Run the command
 
-    `g8 hmrc/template-play-frontend.g8 --serviceName="Trader Services Route One Frontend" --serviceUrlPrefix="send-documents-for-customs-check" --serviceTargetPort="9379" --authorisedIdentifierKey="EORINumber" --serviceTitle="Send Documents For Customs Check" --authorisedServiceName="HMRC-CUS-ORG" --servicePrefix="Trader Services" --package="uk.gov.hmrc.traderservices" -o trader-services-route-one-frontend`
+    `g8 hmrc/template-play-frontend --serviceName="Trader Services Route One Frontend" --serviceUrlPrefix="send-documents-for-customs-check" --serviceTargetPort="9379" --authorisedIdentifierKey="EORINumber" --serviceTitle="Send Documents For Customs Check" --authorisedServiceName="HMRC-CUS-ORG" --servicePrefix="Trader Services" --package="uk.gov.hmrc.traderservices" -o trader-services-route-one-frontend`
     
 and then
     
@@ -65,17 +65,16 @@ the template will supply the following values for the placeholders:
 
     $packaged$ -> uk/gov/hmrc/traderservices
 	$package$ -> uk.gov.hmrc.traderservices
+	$serviceName$ -> Trader Services Route One Frontend
 	$serviceNameSnake$ -> TRADER_SERVICES_ROUTE_ONE_FRONTEND
 	$serviceNameHyphen$ -> trader-services-route-one-frontend
-	$serviceName$ -> Trader Services Route One Frontend
-	$serviceUrlPrefixHyphen$ -> send-documents-for-customs-check
 	$serviceUrlPrefix$ -> send-documents-for-customs-check
+	$servicePrefix$ -> Trader Services
 	$servicePrefixCamel$ -> TraderServices
 	$servicePrefixcamel$ -> traderServices
 	$servicePrefixSnake$ -> TRADER_SERVICES
 	$servicePrefixHyphen$ -> trader-services
 	$servicePrefixLowercase$ -> trader services
-	$servicePrefix$ -> Trader Services
 	$authorisedServiceName$ -> HMRC-CUS-ORG
 	$authorisedIdentifierKey$ -> EORINumber
 	$serviceTargetPort$ -> 9379
@@ -224,10 +223,7 @@ and produce the folders and files as shown below:
 	│                   │   │   ├── package.scala
 	│                   │   │   ├── pageHeading.scala.html
 	│                   │   │   ├── panelIndent.scala.html
-	│                   │   │   ├── phaseBanner.scala.html
-	│                   │   │   ├── researchBanner.scala.html
 	│                   │   │   ├── simpleInputText.scala.html
-	│                   │   │   ├── siteHeader.scala.html
 	│                   │   │   ├── strong.scala.html
 	│                   │   │   ├── subheading.scala.html
 	│                   │   │   ├── subheadingP.scala.html
